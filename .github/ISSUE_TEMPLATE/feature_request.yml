@@ -1,0 +1,19 @@
+name: Feature request / 機能の要望
+description: Suggest a new feature or key mapping / 新しい機能やキー割り当てを提案する
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: driver
+    attributes:
+      label: Driver / ドライバー
+      options:
+        - Both / 両方
+        - a1644-lightning-umdf (USB / Lightning)
+        - a1644-bluetooth-umdf (Bluetooth)
+  - type: textarea
+    id: request
+    attributes:
+      label: Request / 要望
+      description: What you would like and why / 実現したいことと、その理由
+    validations:
+      required: true

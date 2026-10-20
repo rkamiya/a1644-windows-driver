@@ -1,0 +1,56 @@
+name: Bug report / 不具合の報告
+description: Report a problem with the driver / ドライバーの不具合を報告する
+labels: [bug]
+body:
+  - type: dropdown
+    id: driver
+    attributes:
+      label: Driver / ドライバー
+      options:
+        - a1644-lightning-umdf (USB / Lightning)
+        - a1644-bluetooth-umdf (Bluetooth)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Driver version / ドライバーのバージョン
+      placeholder: v0.3.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build / Windows のバージョンとビルド
+      description: Run `winver` / `winver` で確認できます
+      placeholder: Windows 11 24H2 (26100.xxxx)
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: When did it happen? / 発生したタイミング
+      options:
+        - Installation / インストール
+        - Normal use / 通常使用
+        - Uninstallation / アンインストール
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened / 発生した内容
+      description: Steps to reproduce, what you expected, and what happened / 再現手順、期待した動作、実際の動作
+    validations:
+      required: true
+  - type: textarea
+    id: inspect
+    attributes:
+      label: inspect.bat output / inspect.bat の出力
+      render: text
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / ログ
+      description: Relevant `runtime\*.log` files from the extracted folder. Remove any personal information first. / 展開先フォルダーの `runtime\*.log`。個人情報は削除してから貼り付けてください。
+      render: text
