@@ -98,7 +98,7 @@ Fn の状態は、F キーを押した時点で決まります。たとえば Fn
 1. [Releases](https://github.com/rkamiya/a1644-windows-driver/releases) から、接続方法に合った `…-win-x64.zip` をダウンロードします。「Source code」ではなく、リリースに添付された ZIP を選んでください。
 2. （任意）同じリリースに添付された `.zip.sha256` で、ダウンロードしたファイルを検証します。
    ```powershell
-   (Get-FileHash .\a1644-lightning-umdf-v0.3.0-win-x64.zip -Algorithm SHA256).Hash.ToLower()
+   (Get-FileHash .\a1644-lightning-umdf-v0.4.0-win-x64.zip -Algorithm SHA256).Hash.ToLower()
    ```
 3. ZIP を右クリックして「すべて展開」を選び、アンインストールまで保管できるローカルフォルダーに展開します。ZIP の中から直接実行しないでください。
 4. 展開したフォルダーの **install.bat** をダブルクリックします。
@@ -132,7 +132,7 @@ SignTool と Inf2Cat は標準のインストール先から自動で検出し�
 
 ## 既知の制限
 
-- v0.3.0 では、install.bat と uninstall.bat の実機での実行、追加機能の実機入力、日本語入力、再接続、長時間使用の確認がまだ完了していません。
+- v0.4.0 の時点では、install.bat と uninstall.bat の実機での実行、追加機能の実機入力、日本語入力、再接続、長時間使用の確認がまだ完了していません。
 - Microsoft の署名がないため、インストール時に SDK と WDK のツールが必要です。
 
 ## 不具合の報告

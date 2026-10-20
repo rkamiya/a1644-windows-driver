@@ -2,6 +2,14 @@
 
 Release files for both drivers are published in [Releases](https://github.com/rkamiya/a1644-windows-driver/releases).
 
+## v0.4.0 — 2026-10-20
+
+Applies to both `a1644-lightning-umdf` and `a1644-bluetooth-umdf`. No changes to key mapping or driver behavior.
+
+- Corrected the copyright holder in the bundled LICENSE (still MIT)
+- Driver version (DriverVer) updated to 0.4.0.0
+- First release published in this repository
+
 ## v0.3.0 — 2026-10-18
 
 Applies to both `a1644-lightning-umdf` and `a1644-bluetooth-umdf`.

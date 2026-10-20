@@ -98,7 +98,7 @@ The installer (`install.bat`) creates a self-signed certificate on the target PC
 1. From [Releases](https://github.com/rkamiya/a1644-windows-driver/releases), download the `…-win-x64.zip` for your connection type. Choose the ZIP attached to the release, not "Source code".
 2. (Optional) Check the download against the `.zip.sha256` file attached to the same release:
    ```powershell
-   (Get-FileHash .\a1644-lightning-umdf-v0.3.0-win-x64.zip -Algorithm SHA256).Hash.ToLower()
+   (Get-FileHash .\a1644-lightning-umdf-v0.4.0-win-x64.zip -Algorithm SHA256).Hash.ToLower()
    ```
 3. Right-click the ZIP, choose "Extract All", and extract it to a local folder you can keep until you uninstall. Do not run anything directly from inside the ZIP.
 4. Double-click **install.bat** in the extracted folder.
@@ -132,7 +132,7 @@ Run **inspect.bat** to see whether the driver and certificate are registered. Pl
 
 ## Known limitations
 
-- For v0.3.0, running install.bat and uninstall.bat on real hardware, the new features on real hardware, Japanese input, reconnection, and long-term use have not been fully verified yet.
+- As of v0.4.0, running install.bat and uninstall.bat on real hardware, the new features on real hardware, Japanese input, reconnection, and long-term use have not been fully verified yet.
 - Because the drivers are not signed by Microsoft, installation needs tools from the SDK and WDK.
 
 ## Reporting problems
